@@ -1,0 +1,9 @@
+It is good practice to compile this manually.  Here are the steps:
+
+g++ -c rectangle.cpp   # produces rectangle.o, defining area() and perimeter()
+g++ -c main.cpp        # produces main.o, defining main()
+# NOTE: main.o contains function call "stubs" for area() and perimeter().
+# Need to connect the stubs to actual executable code for those functions:
+g++ rectangle.o main.o # connect stubs in main.o to code in rectangle.o
+
+The last command produces `a.out` which you can run.
