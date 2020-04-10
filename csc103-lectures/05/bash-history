@@ -1,0 +1,6 @@
+make
+./collatz 
+echo {1..10}
+echo {1..10} | ./collatz
+echo {1..100} | ./collatz | less
+echo {1..10000} | ./collatz | sort -rn | head -3
